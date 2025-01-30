@@ -1,0 +1,12 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sb
+import pandas as pd
+
+moviedata = pd.read_csv("IMDB Dataset.csv")
+print(moviedata.info())
+
+plt.hist(moviedata["Runtime"])
+plt.xlabel("Run Time")
+plt.ylabel("Movies")
+plt.show()
