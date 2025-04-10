@@ -15,7 +15,7 @@ plt.show()
 x = data['country'].values.reshape(-1,1)
 y = ['GDP']
 
-x_train , x_test , y_train , y_test = train_test_split(x,y,train_size=0.9)
+x_train , x_test , y_train , y_test = train_test_split(x,y,train_size=0.5)
 
 
 model = LogisticRegression()
